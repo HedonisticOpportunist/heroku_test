@@ -1,0 +1,149 @@
+[
+  {
+    "uri": "/Users/pala/Documents/heroku/heroku_app/features/heroku_app.feature",
+    "id": "heroku-app-feature",
+    "keyword": "Feature",
+    "name": "Heroku App Feature",
+    "description": "",
+    "line": 3,
+    "tags": [
+      {
+        "name": "@heroku_app",
+        "line": 1
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Background",
+        "name": "",
+        "description": "",
+        "line": 5,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.30.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 22000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.30.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47000
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:3"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 89000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on the computer database main page",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/heroku_steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "unable to connect to geckodriver 127.0.0.1:4444 (Selenium::WebDriver::Error::WebDriverError)\n./features/step_definitions/heroku_steps.rb:7:in `/^I am on the computer database main page$/'\n./features/heroku_app.feature:6:in `Given I am on the computer database main page'",
+              "duration": 20191599000
+            }
+          }
+        ]
+      },
+      {
+        "id": "heroku-app-feature;creating-a-record-without-entering-the-name;;2",
+        "keyword": "Scenario Outline",
+        "name": "Creating a record without entering the name",
+        "description": "",
+        "line": 89,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@heroku_app",
+            "line": 1
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "When ",
+            "name": "I add a new computer",
+            "line": 82,
+            "match": {
+              "location": "features/step_definitions/heroku_steps.rb:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I fill add its \"\", \"\" \"\" and its \"IBM\"",
+            "line": 83,
+            "match": {
+              "location": "features/step_definitions/heroku_steps.rb:16"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "And ",
+            "name": "I click on the create button",
+            "line": 84,
+            "match": {
+              "location": "features/step_definitions/heroku_steps.rb:20"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "an error message should be displayed",
+            "line": 85,
+            "match": {
+              "location": "features/step_definitions/heroku_steps.rb:57"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 111000
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.30.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
