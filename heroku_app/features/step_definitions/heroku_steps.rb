@@ -25,12 +25,11 @@ Then(/^a message should be displayed that the computer "([^"]*)" has been create
   expect(display_message).to eq "Done! Computer #{name} has been created"
 end
 
-Given(/^I create a record with the details "([^"]*)", "([^"]*)" "([^"]*)" and "([^"]*)"$/) do |name, introduction_date, discontinued_date, company_name|
+And(/^I create a record with the details "([^"]*)", "([^"]*)" "([^"]*)" and "([^"]*)"$/) do |name, introduction_date, discontinued_date, company_name|
   create_computer_record(name, introduction_date, discontinued_date, company_name)
 end
 
 When(/^I click on the delete button$/) do
-  include Computers
   delete_computer
 end
 
