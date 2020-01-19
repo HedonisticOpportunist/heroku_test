@@ -34,7 +34,7 @@ Feature: Heroku App Feature
 
   Scenario Outline: Creating a computer record and then deleting it
     I want to create a computer and then delete it
-    Given I create a record with the details "<name>", "<introduction_date>" "<discontinued_date>" and "<company_name>"
+    And I create a record with the details "<name>", "<introduction_date>" "<discontinued_date>" and "<company_name>"
     And I search for a computer using its "<name>"
     When I click on the delete button
     Then a message should be displayed that the computer has been deleted
@@ -46,7 +46,7 @@ Feature: Heroku App Feature
 
   Scenario Outline: Creating a computer record and then updating it
     I want to create a computer and then update its details
-    Given I create a record with the details "<name>", "<introduction_date>" "<discontinued_date>" and "<company_name>"
+    And I create a record with the details "<name>", "<introduction_date>" "<discontinued_date>" and "<company_name>"
     And I search for a computer using its "<name>"
     When I update its name to "<amended_name>"
     And click on the save button
@@ -123,3 +123,4 @@ Feature: Heroku App Feature
       | name      |
       | Wonderful |
       | x         |
+
