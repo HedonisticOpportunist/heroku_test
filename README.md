@@ -9,6 +9,6 @@ Using BDD allows for non-programmers to run the tests without needing to know an
 
 Most of the actual Ruby code can be found under ../features/modules/Computers - the aim of this is to make the steps definition file as free from complexity as possible and allow maintenance/reworking of the framework to be relatively painless. 
 
-RubyMine Configuration 
+RubyMine Runner Options: --color -r features -p firefox
 
 
