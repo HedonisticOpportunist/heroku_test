@@ -1,4 +1,4 @@
-# heroku_test
+# computer_model_test_framework
 
 * 'Manual' test cases can be found in the feature file that uses the Gherkin language(../features/heroku_app.feature). 
 * Automation framework was written in Ruby using Capybara and RSpec 
